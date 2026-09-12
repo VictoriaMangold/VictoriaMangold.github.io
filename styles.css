@@ -385,12 +385,68 @@ img { max-width: 100%; display: block; }
 
 /* ----------------------------------------------------- blog post --- */
 
-.article { padding: 72px 0 96px; }
-.article__inner { max-width: 68ch; margin-inline: auto; }
-.article h1 { font-size: clamp(2rem, 4vw, 3rem); margin-bottom: 16px; }
+.article-hero {
+  position: relative;
+  background: var(--paper);
+  color: #fff;
+  overflow: clip;
+  isolation: isolate;
+}
+.article-hero__bg {
+  position: absolute;
+  inset: 0;
+  background-image: var(--hero-image);
+  background-size: cover;
+  background-position: center 75%;
+  z-index: -2;
+}
+.article-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg,
+    transparent 0%,
+    transparent 92%,
+    rgba(255, 255, 255, 0.5) 96%,
+    var(--paper) 100%);
+  z-index: -1;
+}
+.article-hero__inner {
+  max-width: 68ch;
+  margin-inline: auto;
+  padding: 96px 0 220px;
+}
+.back--light { color: rgba(255, 255, 255, 0.7); }
+.back--light:hover { color: #fff; }
+.article-hero h1 {
+  color: #fff;
+  font-size: clamp(2rem, 4vw, 3rem);
+  letter-spacing: -0.02em;
+  margin: 18px 0 14px;
+  text-shadow: 0 2px 20px rgba(0, 0, 0, 0.35);
+}
+.article-hero .article__date { color: rgba(255, 255, 255, 0.65); }
+
+.article { padding: 8px 0 96px; }
+.article__inner { max-width: 62ch; margin-inline: auto; }
 .article__date { color: #8a8b90; font-size: 0.9375rem; }
-.article h2 { font-size: 1.4rem; margin: 48px 0 14px; }
-.article p { margin: 0 0 20px; }
+.article h2 { font-size: 1.3rem; margin: 56px 0 16px; letter-spacing: -0.01em; }
+.article p { margin: 0 0 22px; line-height: 1.68; }
+.article p:first-of-type { font-size: 1.0625rem; color: var(--ink); }
+
+.article figure { margin: 32px auto; max-width: 440px; }
+.article figure img {
+  width: 100%;
+  border-radius: 8px;
+}
+.article figcaption {
+  margin-top: 10px;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: #8a8b90;
+  text-align: center;
+}
+.article figcaption a { color: inherit; }
 .back {
   display: inline-block;
   margin-bottom: 40px;
@@ -447,6 +503,7 @@ img { max-width: 100%; display: block; }
   .section__head { padding-bottom: 32px; gap: 16px; }
   .nav__links { gap: 18px; font-size: 0.875rem; }
   .nav__links .nav__hide { display: none; }
+  .article-hero__inner { padding: 72px 0 48px; }
 }
 
 @media (max-width: 520px) {
