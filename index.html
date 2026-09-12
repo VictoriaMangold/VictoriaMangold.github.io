@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Victoria Mangold — AI Research Scientist</title>
+<meta name="description" content="Victoria Mangold is an AI research scientist working on computer vision, foundation models, and efficient, on-device deep learning.">
+<meta name="theme-color" content="#1b1d21">
+
+<!-- social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Victoria Mangold — AI Research Scientist">
+<meta property="og:description" content="Computer vision, foundation models, and the parts that decide whether a model can be deployed: uncertainty, efficiency, privacy.">
+<meta property="og:image" content="assets/portrait.jpg">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body>
+
+<header class="nav" id="nav">
+  <div class="wrap nav__inner">
+    <a class="nav__name" href="#top">Victoria Mangold</a>
+    <nav class="nav__links" aria-label="Sections">
+      <a href="#research" class="nav__hide">Research</a>
+      <a href="#projects">Projects</a>
+      <a href="#writing">Writing</a>
+      <!-- EDIT: point this at your CV file, or delete the link -->
+      <a href="assets/Victoria_Mangold_Resume_.pdf" class="nav__cv">CV</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+<!-- ================================================== intro ======= -->
+<section class="hero">
+  <div class="wrap hero__grid">
+    <div class="hero__text">
+      <h1 class="reveal">Research on AI models that have to work outside the lab.</h1>
+      <p class="hero__lede reveal">
+        I'm an AI research scientist at Carl Zeiss Corporate Research. 
+        Since 3+ years I'm working on computer vision, embedded AI, uncertainty quantification and vision foundation models for industrial applications. 
+        My goal is to develop and deploy those models for physical AI to enable an real world impact. 
+        Before Zeiss I researched on-device learning and uncertainty quantification at Bosch Research in Silicon Valley.
+      </p>
+      <div class="hero__actions reveal">
+        <!-- EDIT: your email address -->
+        <a class="btn btn--solid" href="https://linkedin.com/in/victoria-mangold" target="_blank" rel="noopener">Get in touch</a>
+        <a class="btn btn--ghost" href="#projects">See the work</a>
+      </div>
+    </div>
+    <figure class="hero__portrait">
+      <img src="assets/portrait.jpg" alt="Victoria Mangold" width="900" height="1200">
+    </figure>
+  </div>
+</section>
+
+<!-- =============================================== research ======= -->
+<section class="section" id="research">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>What I work on</h2>
+      <p>
+        Four threads run through almost everything I've done: what a model sees, how
+        certain it is, what it costs to run, and who is allowed to look at the data.
+      </p>
+    </div>
+
+    <!-- EDIT: four focus areas. Keep them to one sentence each. -->
+    <div class="areas">
+      <article class="area">
+        <h3>Vision &amp; foundation models</h3>
+        <p>Multimodal vision backbones, representation learning, and defect detection for industrial inspection.</p>
+      </article>
+      <article class="area">
+        <h3>Uncertainty</h3>
+        <p>Calibration, out-of-distribution detection, and runtime monitoring for safety-critical systems.</p>
+      </article>
+      <article class="area">
+        <h3>Efficiency</h3>
+        <p>Architecture search, distillation, pruning, quantization, and AI deploymentt on the device.</p>
+      </article>
+      <article class="area">
+        <h3>Privacy &amp; quantum</h3>
+        <p>Training under homomorphic encryption, and training quantum neural networks.</p>
+      </article>
+    </div>
+
+    <dl class="stack">
+      <dt>Tools</dt>
+      <dd>PyTorch, TensorFlow, Jax, Qiskit, Python, C/C++, Linux</dd>
+      <dt>Teaching</dt>
+      <dd>Former Computer Vision lecture at the University of Stuttgart (~250 master's students), guest lecture on generative AI at the University of Pforzheim</dd>
+      <dt>Elsewhere</dt>
+      <dd>Technical programm chair at Tübingen Women in ML, working with the Tübingen AI Center, Max Planck, and ELLIS</dd>
+    </dl>
+  </div>
+</section>
+
+<!-- =============================================== projects ======= -->
+<section class="section section--stone" id="projects">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Projects</h2>
+      <p>Selected research, from quantum learning theory to models small enough to run on a sensor.</p>
+    </div>
+
+    <div class="items">
+
+      <!-- ------------------------------------------- project 1 --- -->
+      <article class="item">
+        <div class="item__meta">
+          <h3>Uncertainty Quantification & Embedded AI</h3>
+          <span class="item__where">Bosch Research, Renningen &amp; Sunnyvale</span>
+          <span class="item__year">09.2020 — 06.2024</span>
+        </div>
+        <div class="item__body">
+          <ul class="tags">
+            <li>On-device learning</li>
+            <li>NAS</li>
+            <li>Uncertainty distillation</li>
+          </ul>
+          <p>
+            A model that is accurate in a notebook is not necessarily a model you can ship on a
+            sensor. I built a multi-objective, hardware-aware architecture search that trades
+            accuracy, uncertainty quality, and hardware cost against each other, using ensemble
+            pruning and uncertainty distillation to collapse an ensemble into one deployable
+            network that still knows when it is wrong.
+          </p>
+          <p>
+            In Silicon Valley I extended this to learning that happens on the device itself:
+            human activity recognition from multivariate time series, adapting to the user
+            without the data ever leaving the sensor.
+          </p>
+          <!-- EDIT: add a link to a thesis PDF, repo, or talk when you have one -->
+        </div>
+      </article>
+
+      <!-- ------------------------------------------- project 2 --- -->
+      <article class="item">
+        <div class="item__meta">
+          <h3>Quantum machine learning</h3>
+          <span class="item__where">University of Stuttgart, IAAS</span>
+          <span class="item__year">05.2022 — 11.2022</span>
+        </div>
+        <div class="item__body">
+          <ul class="tags">
+            <li>QNNs</li>
+            <li>Entanglement</li>
+            <li>Learning theory</li>
+          </ul>
+          <p>
+            How few training samples does a quantum neural network really need? We extended the
+            Quantum No-Free-Lunch theorem to training sets with varying degrees of entanglement,
+            and showed what happens to the expected risk when samples are orthogonal or linearly
+            dependent. The bounds were validated by simulating QNN training on randomly generated 
+            6-qubit target unitaries.
+          </p>
+          <a class="paper" href="https://link.springer.com/article/10.1007/s42484-025-00328-7">
+            <cite>On reducing the amount of samples required for training of QNNs: constraints on the linear structure of the training data</cite>
+            <span>Quantum Machine Intelligence 7, 101 (2025) — open access</span>
+          </a>
+        </div>
+      </article>
+
+      <!-- ------------------------------------------- project 3 --- -->
+      <article class="item">
+        <div class="item__meta">
+          <h3>Diabetic retinopathy detection</h3>
+          <span class="item__where">University of Stuttgart, Institute for AI</span>
+          <span class="item__year">04.2022 - 09.2022</span>
+        </div>
+        <div class="item__body">
+          <ul class="tags">
+            <li>Explainable AI</li>
+            <li>Medical imaging</li>
+            <li>Transfer learning</li>
+          </ul>
+          <p>
+            Developed a CNN for explainable diabetic retinopathy detection (XAI) that grades
+            retinal photographs while letting a clinician see why it decided what it decided.
+            Applied state-of-the-art feature extraction techniques, transfer learning, and
+            explainability approaches, on the premise that in medicine an unexplained prediction
+            is not a usable one.
+          </p>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ================================================ writing ======= -->
+<section class="section" id="writing">
+  <div class="wrap">
+    <div class="section__head">
+      <h2>Writing</h2>
+      <p>Notes on research, and on what it's like to do it somewhere else.</p>
+    </div>
+
+    <!-- EDIT: copy this block for each new post -->
+    <a class="post" href="blog/research-stay-bay-area.html">
+      <span class="post__date">Draft</span>
+      <span>
+        <h3>Seven months of research in the Bay Area</h3>
+        <p>
+          What changed about the way I do research after a stay at Bosch Research in Sunnyvale
+          and the Stanford SystemX Alliance — and what I'd tell anyone considering the same move.
+        </p>
+      </span>
+    </a>
+
+    <p class="note">More coming.</p>
+  </div>
+</section>
+
+</main>
+
+<!-- ================================================= footer ======= -->
+<footer class="footer">
+  <div class="wrap">
+    <h2>Happy to talk about research.</h2>
+    <div class="footer__links">
+      <!-- EDIT: replace every placeholder below -->
+      <!-- <a href="mailto:@DOMAIN.COM">EMAIL@DOMAIN.COM</a> -->
+      <a href="https://linkedin.com/in/victoria-mangold">LinkedIn</a>
+      <!-- <a href="https://scholar.google.com/citations?user=ID">Google Scholar</a> -->
+      <a href="https://github.com/victoriamangold">GitHub</a>
+      <!-- <a href="assets/Victoria_Mangold_Resume.pdf">CV (PDF)</a> -->
+    </div>
+    <div class="footer__base">
+      <span>Stuttgart, Germany</span>
+      <span>© <span id="year">2026</span> Victoria Mangold</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
