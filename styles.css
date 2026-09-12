@@ -431,7 +431,9 @@ img { max-width: 100%; display: block; }
     gap: 44px;
     padding: 64px 0 72px;
   }
-  .hero__portrait { max-width: 300px; justify-self: start; }
+  .hero__text { order: 2; }
+  .hero__portrait { order: 1; max-width: 300px; justify-self: center; margin-inline: auto; }
+  .hero__lede { text-align: left; hyphens: none; }
   .section { padding: 72px 0; }
   .section__head,
   .item,
